@@ -6,17 +6,16 @@ body {
 	background: white;
 }
 html, body {
-  height: 100%;
+  height: auto;
 }
-
 #wrap {
   min-height: 100%;
 }
 
 #main {
   overflow:auto;
-  padding-bottom:50px; /* this needs to be bigger than footer height*/
-}
+  padding-bottom:50px;} /* this needs to be bigger than footer height*/
+
 
 .footer {
   position: relative;
