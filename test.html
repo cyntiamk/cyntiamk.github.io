@@ -46,24 +46,20 @@
   <p>On this project we will be analysing how Latitude influences the weather in the World. Latitude ranges from -90 (South Pole) to 90 (North Pole) and 0 (Equator). You can read more about Latitude here <a href="https://en.wikipedia.org/wiki/Latitude">Wikipedia</a></p>
 </div>
 
-<div class="container-fluid">
   <div class="boxed">
-      <div class="media">
-        <div class="media-left media-top">
-        <a><img class="media-object media-responsive" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="Latitude"></a>
-        </div>
-      <div class="media-body">
-      <p class="media-heading">
-      Utilizing Python (Pandas, Matplotlit and Numpy), OpenWeather API and CityPy API we were able to gather more than 500 random cities wolrdwide to see how latitude influeces the weather. 
+    <h2>Summary</h2>
+   
+    <section id="main-summary">
+      <section id="figure">
+        <img id="summary-image" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="Latitude">
+      </section>
+      <p>Utilizing Python (Pandas, Matplotlit and Numpy), OpenWeather API and CityPy API we were able to gather more than 500 random cities wolrdwide to see how latitude influeces the weather. 
       The first step of this project, was to randomly selected numbers from -90 to 90 and place in a list for Latitudes then another list with random number from -180 to 180 for the Longitudes, these two list were then combined and we ended up with more than 500 pairs of Latitudes and Longitudes.
       With these pairs in hand, we queried the CityPy API for city names with correspondents Latitudes and Longitudes. And finaly we were able to retrieve weather date such as temperature, humidity, cloudiness and wind speed from the OpenWeather API and usigon Matplotlib plotted graphs to vizualize our findings.</p>
-    </div>
-  </div>
+    </section>
 </div>
- 
 
-<div class="container-fluid">
-  <div class="boxed" id="visual">
+ <div class="boxed" id="visual">
            <h4>Visualizations</h4>
     <div class="row">
       <div class="col-lg-6 col-md-4 col-sm-5">
@@ -86,8 +82,16 @@
     </div>
     </div>
 </div>
+
+ 
+
+  <div id="wrap">
+  <div id="main" class="container clear-top">
+  </div>
 </div>
-</div>
-</div>
+<footer class="footer">
+  <p>Cyntia Wonsch 2018<a href="https://github.com/cyntiamk"> GitHub</a></p> 
+
+</footer>
 </body>
 </html>

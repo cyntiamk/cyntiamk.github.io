@@ -10,8 +10,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div class="container-fluid">
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    
 
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -44,75 +45,53 @@
   <h1>Latitude and the Weather</h1>
   <p>On this project we will be analysing how Latitude influences the weather in the World. Latitude ranges from -90 (South Pole) to 90 (North Pole) and 0 (Equator). You can read more about Latitude here <a href="https://en.wikipedia.org/wiki/Latitude">Wikipedia</a></p>
 </div>
-<div class="jumbotron">
-  <div class="container">
-    
-      <div class="row">
-      <div class="col-md-8">
-      <div class="media">
-        <div class="media-left media-top">
-          <a href="#">
-            <img class="media-object media-responsive" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="Latitude"></a>
-        </div>
-      
-      <div class="media-body">
-      <p class="media-heading">
-      Utilizing Python (Pandas, Matplotlit and Numpy), OpenWeather API and CityPy API we were able to gather more than 500 random cities wolrdwide to see how latitude influeces the weather. 
+
+  <div class="boxed">
+    <h2>Summary</h2>
+   
+    <section id="main-summary">
+      <section id="figure">
+        <img id="summary-image" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="Latitude">
+      </section>
+      <p>Utilizing Python (Pandas, Matplotlit and Numpy), OpenWeather API and CityPy API we were able to gather more than 500 random cities wolrdwide to see how latitude influeces the weather. 
       The first step of this project, was to randomly selected numbers from -90 to 90 and place in a list for Latitudes then another list with random number from -180 to 180 for the Longitudes, these two list were then combined and we ended up with more than 500 pairs of Latitudes and Longitudes.
       With these pairs in hand, we queried the CityPy API for city names with correspondents Latitudes and Longitudes. And finaly we were able to retrieve weather date such as temperature, humidity, cloudiness and wind speed from the OpenWeather API and usigon Matplotlib plotted graphs to vizualize our findings.</p>
-    </div>
-  </div>
+    </section>
 </div>
- 
 
-  <div class="col-md-3">
-    <div class="sidebar-nav-fixed pull-right affix">
-      <div class="well">
-      <h4>Visualizations</h4>
+ <div class="boxed" id="visual">
+           <h4>Visualizations</h4>
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-4 col-sm-5">
         <a href="temperature.html" class="img-thumbnail">
         <img class="visual media-responsive" src="temperature.png" alt="temperature.png"></a>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-4 col-sm-5">
         <a href="humidity.html" class="img-thumbnail">
         <img class="visual media-responsive" src="humidity.png" alt="humidity.png"></a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+       <div class="col-lg-6 col-md-4 col-sm-5">
         <a href="wind.html" class="img-thumbnail">
         <img class="visual media-responsive" src="wind.png" alt="wind.png"></a>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+      <div class="col-lg-6 col-md-4 col-sm-5">
         <a href="cloud.html" class="img-thumbnail">
         <img class="visual media-responsive" src="cloud.png" alt="cloud.png"></a>
-      </div>
+   
     </div>
     </div>
     </div>
-  </div>
-
 </div>
-</div>
-</div>
-
-
 
  
 
+  <div id="wrap">
+  <div id="main" class="container-fluid clear-top">
+  </div>
+</div>
+<footer class="footer">
+  <p>Cyntia Wonsch 2018<a href="https://github.com/cyntiamk"> GitHub</a></p> 
 
-
-
-
-<!--<footer class="mojFooter">
-  <font face="Roboto Condensed" size="4"> <center>
-    <div class="container">
-      <div class="row" style="margin-top: 7px;">
-        <p> Cyntia Wonsch 2018</p> 
-        </div>  
-    </div>
-  </font> </center>
-</footer>-->      
+</footer>
 </body>
 </html>

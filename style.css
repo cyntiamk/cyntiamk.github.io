@@ -5,14 +5,27 @@ body {
 	color: #dfd8d8;
 	background: white;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:10px;
-    background:#ccc;
+html, body {
+  height: 100%;
 }
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:50px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:10px;
+  background: #52b7bd;
+} 
 h1 {
 	color:#52b7bd;
 	font-size: 30px;
@@ -27,6 +40,10 @@ h1.project{color:#52b7bd;
 }
 h2.visualizations {
 	text-align: center;
+	color:#52b7bd;
+}
+h2 {
+	text-align: left;
 	color:#52b7bd;
 }
 h4 {
@@ -120,13 +137,14 @@ p.media-heading {
 	height: 40%;
 }
 .boxed#visual {
-	position:fixed;
+	position:relative;
 	top:35%;
-	right:5px;
+	right:0;
 	text-align: center;
 	background:#EAECEE;
-	width: 33%;
-	float: right;height: 50%;
+	width: 32%;
+	float: right;
+	height: 55%;
 
 }
 
@@ -170,6 +188,28 @@ p.media-heading {
 .container {
   width: 1024px;
   margin: 0 auto;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Selecting elements by ID */
+#main-summary,
+#contact-info,
+#summary-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#summary-image {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
 }
 
 @media (max-width: 780px) {
@@ -218,6 +258,69 @@ img.media-object{
 	width: 33%;
 	float: right;
 	height: 60%;
+}
+
+@media (max-width: 580px) {
+img.comp{
+	height: 200px;
+	width: 250px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.visual{
+	height: 100px;
+	width: 150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.displayed {
+	height: 300px;
+	width: 400px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#summary-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 10px;
+}
+h1.disp {
+	font-size: 20px;
+	
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+img.media-object{
+	height: 100px;
+	width: 150px;
+}
+.media-body {
+	padding:0;
+	margin:0;
+	border:0;
+}
+.boxed#visual {
+	position:fixed;
+	top:25%;
+	right:5px;
+	text-align: center;
+	background:#EAECEE;
+	width: 33%;
+	float: right;
+	height: 60%;
+}
+.boxed {
+	padding:0;
+	margin:0;
+	border:0;
 }
 
 }
