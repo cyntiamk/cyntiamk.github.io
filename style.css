@@ -179,10 +179,6 @@ p.media-heading {
   float: right;
 }
 /* Selecting elements by class */
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
 
 .container {
   width: 1024px;
