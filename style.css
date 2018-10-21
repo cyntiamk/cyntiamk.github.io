@@ -5,26 +5,29 @@ body {
 	color: #dfd8d8;
 	background: white;
 }
-html, body {
+/*html, body {
   height: auto;
 }
 #wrap {
   min-height: 100%;
-}
-
+}*/
+#color {color:white;}
 #main {
   overflow:auto;
   padding-bottom:50px;} /* this needs to be bigger than footer height*/
 
 
 .footer {
-  position: relative;
+  position: fixed;
+  bottom:0;
+  width: 100%;
   margin-top: -50px; /* negative value of footer height */
   height: 50px;
   clear:both;
   padding-top:10px;
   background: #52b7bd;
 } 
+#color {color:white;}
 h1 {
 	color:#52b7bd;
 	font-size: 30px;
@@ -121,21 +124,13 @@ p.media-heading {
  	font-size:15px;
  	color:black;
 }
-.jumbotron {
-    margin-bottom: 0px;
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-}
 
-.boxed {
-	position: fixe;
+#boxed-summary {
 	text-align: left;
 	width: 67%;
 	height: 40%;
 }
-.boxed#visual {
+#boxed-visual {
 	position:relative;
 	top:35%;
 	right:0;
@@ -167,7 +162,7 @@ p.media-heading {
 .navbar-default{
 	background: #aaaebc;
 }
-#color {color:white;}
+
 
 .navbar-brand {
   padding: 20px;
@@ -211,7 +206,22 @@ p.media-heading {
   margin-right: 20px;
 }
 
-@media (max-width: 780px) {
+
+@media (max-width: 960px) {
+#boxed-visual {
+	position:relative;
+	bottom:0;
+	text-align: center;
+	background:#EAECEE;
+	width: 100%;
+	height: 20%;
+}
+#boxed-summary {
+	text-align: left;
+	width: 100%;
+	height: 30%;
+}
+
 img.comp{
 	height: 200px;
 	width: 250px;
@@ -248,18 +258,25 @@ img.media-object{
 	height: 100px;
 	width: 150px;
 }
-.boxed#visual {
-	position:fixed;
-	top:25%;
-	right:5px;
-	text-align: center;
-	background:#EAECEE;
-	width: 33%;
-	float: right;
-	height: 60%;
+
 }
 
-@media (max-width: 580px) {
+@media (max-width: 780px) {
+#boxed-visual {
+	position:relative;
+	bottom:0;
+	text-align: center;
+	background:#EAECEE;
+	width: 100%;
+	height: 20%;
+}
+#boxed-summary {
+	text-align: left;
+	width: 100%;
+	height: 30%;
+}
+
+
 img.comp{
 	height: 200px;
 	width: 250px;
