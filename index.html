@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Latitude</title>
+  <title>Cyntia Wonsch</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -20,61 +20,63 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" id="color" href="index.html">Latitude</a>
+        <a class="navbar-brand" id="color" href="index.html">Home</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="cloud.html">Cloud</a></li>
-              <li><a href="humidity.html">Humidty</a></li>
-              <li><a href="temperature.html">Temperature</a></li>
-              <li><a href="wind.html">Wind</a></li>
+              <li><a href="weather_api/weather_api.html">Weather API</a></li>
+              <li><a href="social_analytics/social_analytics.html">Social Media Mining</a></li>
+              <li><a href="https://plotly-project.herokuapp.com/">Plotly</a></li>
+              <li><a href="wind.html">Web Scrapping</a></li>
             </ul>
           </li>
-          <li><a href="comparisons.html">Comparisons</a></li>
-          <li><a href="data.html">Data</a></li>
-          
+          <li><a href="contact.html">Contact</a></li>      
         </ul>
       </div>
 </nav>
 <div class="page-header">
-  <h1>Latitude and the Weather</h1>
-  <p>On this project we will be analysing how Latitude influences the weather in the World. Latitude ranges from -90 (South Pole) to 90 (North Pole) and 0 (Equator). You can read more about Latitude here <a href="https://en.wikipedia.org/wiki/Latitude">Wikipedia</a></p>
+  <h1>Data Analytics Professional</h1>
+  <p><a href="https://docs.google.com/document/d/1abZcvBF-mEQaiahv2U1zdNlBR63GwW6iiKSTaIMmm44/edit">Resume</a></p>
 </div>
 
   <div class="boxed" id="boxed-summary">
-    <h2>Summary</h2>
+    <h2>Cyntia Wonsch</h2>
    
     <section id="main-summary">
       <section id="figure">
-        <img id="summary-image" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="Latitude">
+        <img id="summary-image" src="https://avatars0.githubusercontent.com/u/41457807?s=460&v=4" width="200" height="200" alt="cyntiamk">
       </section>
-      <p>Utilizing Python (Pandas, Matplotlit and Numpy), OpenWeather API and CityPy API we were able to gather more than 500 random cities wolrdwide to see how latitude influeces the weather. 
-      The first step of this project, was to randomly selected numbers from -90 to 90 and place in a list for Latitudes then another list with random number from -180 to 180 for the Longitudes, these two list were then combined and we ended up with more than 500 pairs of Latitudes and Longitudes.
-      With these pairs in hand, we queried the CityPy API for city names with correspondents Latitudes and Longitudes. And finaly we were able to retrieve weather date such as temperature, humidity, cloudiness and wind speed from the OpenWeather API and usigon Matplotlib plotted graphs to vizualize our findings.</p>
+      <p>A former tourism and hospitality professional with a Bachelor’s Degree in Tourism and Hotel Management currently seeking a full-time position in Data Analytics. With newly acquired skills in Python (including Pandas, Matplotlib, API manipulation, and social media mining), SQL (MySQL), HTML/CSS, JavaScript, D3.js, Leaflet,R, Tableau, Hadoop and Spark.
+Passionate about developing tools to explore and manipulate data.  An insatiable learner who loves tackling new challenges with the ability to learn on the go and under pressure.  Extremely driven,  independent and with strong interpersonal skills acquired in many years of working in customer service in the travel industry. Fluent in Portuguese and Spanish, as well as basic language usage in Japanese. 
+</p>
     </section>
 </div>
 
  <div class="boxed" id="boxed-visual">
-  <h4>Visualizations</h4>
+  <h4>Projects</h4>
   <div class="row">
     <div class="col-xs-3 col-sm-3 col-md-6">
-    <a href="temperature.html" class="media-responsive img-thumbnail">
-    <img class="visual media-responsive" src="temperature.png" alt="temperature.png"></a>
+    <header>Weather API</header>
+    <a href="weather_api/weather_api.html" class="media-responsive img-thumbnail">
+    <img class="visual media-responsive" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="latitude"></a>
   </div>
     <div class="col-xs-3 col-sm-3 col-md-6">
+    <header>Social Media Mining</header>
     <a href="humidity.html" class="media-responsive img-thumbnail">
     <img class="visual media-responsive" src="humidity.png" alt="humidity.png"></a>
   </div>
     <div class="col-xs-3 col-sm-3 col-md-6">
-    <a href="wind.html" class="media-responsive img-thumbnail">
-    <img class="visual media-responsive" src="wind.png" alt="wind.png"></a>
+    <header>Plotly</header>
+    <a href="https://plotly-project.herokuapp.com/" class="media-responsive img-thumbnail">
+    <img class="visual media-responsive" src="plotly/bubble.png" alt="bubble.png"></a>
   </div>
     <div class="col-xs-3 col-sm-3 col-md-6">
+    <header>Web Scrapping</header>
     <a href="cloud.html" class="media-responsiveimg-thumbnail">
-    <img class="visual media-responsive" src="cloud.png" alt="cloud.png"></a>
+    <img class="visual media-responsive" src="plotly/gauge.png" alt="gauge.png"></a>
   </div>
   </div>
 </div>

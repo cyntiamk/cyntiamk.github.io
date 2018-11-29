@@ -28,6 +28,7 @@ body {
   background: #52b7bd;
 } 
 #color {color:white;}
+
 h1 {
 	color:#52b7bd;
 	font-size: 30px;
@@ -141,6 +142,17 @@ p.media-heading {
 	height: 55%;
 
 }
+#boxed-social {
+	position:relative;
+	top:35%;
+	right:0;
+	text-align: center;
+	background:#EAECEE;
+	width: 18%;
+	float: right;
+	height: 55%;
+
+}
 
 .project {
 	position: fixed;
@@ -190,6 +202,7 @@ p.media-heading {
 #contact-info,
 #summary-image {
   float: left;
+  border-radius: 50%;
 }
 
 #figure {

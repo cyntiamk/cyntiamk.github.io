@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Temperature</title>
+  <title>Comparisons</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" id="color" href="index.html">Latitude</a>
+        <a class="navbar-brand" id="color" href="../index.html">Home</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -29,28 +29,50 @@
             <ul class="dropdown-menu">
               <li><a href="cloud.html">Cloud</a></li>
               <li><a href="humidity.html">Humidty</a></li>
+              <li><a href="temperature.html">Temperature</a></li>
               <li><a href="wind.html">Wind</a></li>
             </ul>
           </li>
-          <li><a href="comparisons.html">Comparisons</a></li>
           <li><a href="data.html">Data</a></li>
-          
         </ul>
       </div>
 </nav>
-<div class="page-header">
-  <h1>Latitude vs Temperature</h1> 
-  <p>On this plot it was observed that the closer we get the Equator (0), the warmer it gets.</p>
+  <h4>Comparisons:<h4>
+    <h5>Click on any plot to view full details</h5>
+  <div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+
+    <a href="temperature.html" class="thumbnail">
+      <img class="comp" src="Resources/images/temperature.png" alt="temperature.png">
+    </a>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <a href="humidity.html" class="thumbnail">
+      <img class="comp" src="Resources/images/humidity.png" alt="humidity.png">
+    </a>
+  </div>
 </div>
-<a><img class="displayed media-responsive" src="temperature.png" alt="temperature.png"></a>
-      
-<div id="wrap">
+ <div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <a href="wind.html" class="thumbnail">
+      <img class="comp" src="Resources/images/wind.png" alt="wind.png">
+    </a>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <a href="cloud.html" class="thumbnail">
+      <img class="comp" src="Resources/images/cloud.png" alt="cloud.png">
+    </a>
+  </div>
+ </div>
+</div>
+  <div id="wrap">
   <div id="main" class="container-fluid clear-top">
   </div>
 </div>
 <footer class="footer">
   <p id="color">Cyntia Wonsch 2018<a href="https://github.com/cyntiamk"> GitHub</a></p> 
 
-</footer>   
+</footer>
+       
 </body>
 </html>
