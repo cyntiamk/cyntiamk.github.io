@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Cyntia Wonsch</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cyntia Wonsch</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
 <body>
-<nav class="navbar navbar-default"> 
+  <!-- Header -->
+<div class="header">
+  <div class="hero-image">
+  <h1>DATA ANALYST</h1>
+  <p>Passionate about data and coding</p>
+</div>
+</div>
+<!-- Navigation Bar -->
   <div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" id="color" href="index.html">Home</a>
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <!--<a href="#" class="navbar-brand "style="color:white;">Cyntia Wonsch</a>-->
+  </div>
+    <ul class="nav navbar-nav pull-right" style="color:white;">
+      <!--<li><a href="projects.html">Projects</a></li>-->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+<!-- The flexible grid (content) -->
+<div class="row-main">
+  <div class="side">
+    <h2>About Me</h2>
+    <img src="static/img/side.jpg" class="main-img" alt="Card image">
+    <p>Data Analyst </p>
+  </div>
+  <div class="main">
+   <div class="row">
+    <div class="col-md-3">
+      <div class="card-projects">
+        <img class="card-img-top" src="#" alt="bike_share">
+          <div class="card-body">
+            <h4 class="card-title">Full Stack Website</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">Project Overview</a>
+          </div>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="weather_api/weather_api.html">Weather API</a></li>
-              <li><a href="social_analytics/social_analytics.html">Social Media Mining</a></li>
-              <li><a href="https://plotly-project.herokuapp.com/">Plotly</a></li>
-              <li><a href="wind.html">Web Scrapping</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>      
-        </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="card-projects">
+          <img class="card-img-top" src="#" alt="ml_project">
+          <div class="card-body">
+            <h4 class="card-title">Machine Learning</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">Project Overview</a>
+          </div>
       </div>
-</nav>
-<div class="page-header">
-  <h1>Data Analytics Professional</h1>
-  <p><a href="https://docs.google.com/document/d/1abZcvBF-mEQaiahv2U1zdNlBR63GwW6iiKSTaIMmm44/edit">Resume</a></p>
+    </div>
+        <div class="col-md-3">
+      <div class="card-projects">
+          <img class="card-img-top" src="#" alt="project">
+          <div class="card-body">
+            <h4 class="card-title">Web Scraping</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">Project Overview</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card-projects">
+          <img class="card-img-top" src="#" alt="SQLAlchemy">
+          <div class="card-body">
+            <h4 class="card-title">SQLAlchemy</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">Project Overview</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+</div>
 </div>
 
-  <div class="boxed" id="boxed-summary">
-    <h2>Cyntia Wonsch</h2>
-   
-    <section id="main-summary">
-      <section id="figure">
-        <img id="summary-image" src="https://avatars0.githubusercontent.com/u/41457807?s=460&v=4" width="200" height="200" alt="cyntiamk">
-      </section>
-      <p>A former tourism and hospitality professional with a Bachelor’s Degree in Tourism and Hotel Management currently seeking a full-time position in Data Analytics. With newly acquired skills in Python (including Pandas, Matplotlib, API manipulation, and social media mining), SQL (MySQL), HTML/CSS, JavaScript, D3.js, Leaflet,R, Tableau, Hadoop and Spark.
-Passionate about developing tools to explore and manipulate data.  An insatiable learner who loves tackling new challenges with the ability to learn on the go and under pressure.  Extremely driven,  independent and with strong interpersonal skills acquired in many years of working in customer service in the travel industry. Fluent in Portuguese and Spanish, as well as basic language usage in Japanese. 
-</p>
-    </section>
+<!-- Footer -->
+<div class="footer">
+  <a href="https://github.com/cyntiamk" target="_blanket"><img class="github" src="static/img/github.png"></a>
+  <a href="https://www.linkedin.com/in/cyntia-wonsch-69555a24/" target="_blanket"><img class="linkedin" src="static/img/linkedin.png"></a>
 </div>
 
- <div class="boxed" id="boxed-visual">
-  <h4>Projects</h4>
-  <div class="row">
-    <div class="col-xs-3 col-sm-3 col-md-6">
-    <header>Weather API</header>
-    <a href="weather_api/weather_api.html" class="media-responsive img-thumbnail">
-    <img class="visual media-responsive" src="https://www.bing.com/th?id=OIP.WQ-N8oWpaBFgmsGJvxxuSwHaE6&w=281&h=186&c=7&o=5&pid=1.7" alt="latitude"></a>
-  </div>
-    <div class="col-xs-3 col-sm-3 col-md-6">
-    <header>Social Media Mining</header>
-    <a href="humidity.html" class="media-responsive img-thumbnail">
-    <img class="visual media-responsive" src="humidity.png" alt="humidity.png"></a>
-  </div>
-    <div class="col-xs-3 col-sm-3 col-md-6">
-    <header>Plotly</header>
-    <a href="https://plotly-project.herokuapp.com/" class="media-responsive img-thumbnail">
-    <img class="visual media-responsive" src="plotly/bubble.png" alt="bubble.png"></a>
-  </div>
-    <div class="col-xs-3 col-sm-3 col-md-6">
-    <header>Web Scrapping</header>
-    <a href="cloud.html" class="media-responsiveimg-thumbnail">
-    <img class="visual media-responsive" src="plotly/gauge.png" alt="gauge.png"></a>
-  </div>
-  </div>
-</div>
- 
-
-  <div id="wrap">
-  <div id="main" class="container clear-top">
-  </div>
-</div>
-<footer class="footer">
-  <p id="color">Cyntia Wonsch 2018<a href="https://github.com/cyntiamk"> GitHub</a></p>
-</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </body>
+
 </html>
